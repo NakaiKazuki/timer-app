@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  dev:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./dist:/app/dist
+      - ./package.json:/app/package.json
